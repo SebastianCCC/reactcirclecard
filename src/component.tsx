@@ -4,6 +4,8 @@ export interface State {
   textLabel: string
   textValue: string
   size: number
+  background?: string
+  borderWidth?: number
 }
 
 export const initialState: State = {
@@ -39,8 +41,8 @@ export class ReactCircleCard extends React.Component<{}, State> {
   }
 
   render() {
-    const { textLabel, textValue, size } = this.state
-    const style: React.CSSProperties = { width: size, height: size }
+    const { textLabel, textValue, size, background, borderWidth } = this.state
+    const style: React.CSSProperties = { width: size, height: size, background, borderWidth }
 
     return (
       <div className="circleCard" style={style}>

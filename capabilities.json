@@ -6,7 +6,26 @@
       "kind": "Measure"
     }
   ],
-  "objects": {},
+  "objects": {
+    "circle": {
+      "properties": {
+        "circleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "circleThickness": {
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    }
+  },
   "dataViewMappings": [
     {
       "conditions": [
